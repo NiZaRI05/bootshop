@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Uno Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top custom-nav shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Nicolás Zambrano</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active-custom rounded px-3" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#que-es">¿Qué es?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#instalacion">Instalación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#componentes">Componentes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="py-5">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold mb-3">Bienvenido a mi Consulta de Bootstrap</h1>
+            <p class="lead text-muted mb-4">Desarrollado por <span class="texto-nombre fw-bold">Nicolás Zambrano</span></p>
+            <div class="linea-acento mx-auto mb-4"></div>
+            <a href="#que-es" class="btn btn-conoceme px-4 py-2 custom-btn shadow-sm">Conóceme más</a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        
+        <section id="que-es" class="mb-5 py-4">
+            <h2 class="fw-bold">¿Qué es Bootstrap?</h2>
+            <div class="linea-acento mb-4"></div>
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-4 mb-md-0">
+                    <p class="lead">Bootstrap es un framework de desarrollo web de código abierto muy popular, originalmente creado por Twitter. Se utiliza para diseñar y personalizar sitios web responsivos y adaptables a dispositivos móviles de manera rápida y eficiente.</p>
+                    <p>Proporciona una colección extensa de herramientas basadas en HTML, CSS y JavaScript que permiten estructurar layouts complejos, añadir estilos tipográficos, botones, formularios y una gran variedad de componentes interactivos listos para usar.</p>
+                </div>
+                <div class="col-md-5 text-center">
+                    <i class="bi bi-bootstrap-fill display-1 text-purple py-4 d-block img-thumbnail rounded bg-white shadow-sm"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="instalacion" class="mb-5 py-4">
+            <h2 class="fw-bold">¿Cómo se agrega a un sitio web?</h2>
+            <div class="linea-acento mb-4"></div>
+            <p class="mb-4">Existen dos métodos principales para integrar Bootstrap en un proyecto web:</p>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"><i class="bi bi-cloud-arrow-down-fill me-2"></i>Método 1: Vía CDN (Recomendado para prácticas)</h5>
+                            <p class="card-text">Consiste en enlazar los archivos CSS y JS directamente desde los servidores de Bootstrap copiando los enlaces dentro de las etiquetas <code>&lt;head&gt;</code> y al final del <code>&lt;body&gt;</code>. Es el método que utiliza esta página.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"><i class="bi bi-download me-2"></i>Método 2: Descarga Local o Gestores de Paquetes</h5>
+                            <p class="card-text">Puedes descargar los archivos compilados de producción e incluirlos localmente en las carpetas de tu proyecto, o bien instalarlos utilizando herramientas profesionales como <code>npm</code> o <code>yarn</code>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="componentes" class="mb-5 py-4">
+            <h2 class="fw-bold">Principales elementos de Bootstrap</h2>
+            <div class="linea-acento mb-4"></div>
+            <p class="mb-5">Bootstrap ofrece una enorme cantidad de utilidades y elementos listos para producción. A continuación, exploramos los fundamentales mediante una estructura de consulta interactiva:</p>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-3 text-center">
+                            <span class="badge badge-fecha px-3 py-2 text-dark fs-6 fw-normal shadow-sm">Punto 1</span>
+                            <div class="vr h-100 mx-auto my-2 d-block bg-secondary opacity-25" style="width: 2px;"></div>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-dark">El Sistema de Grid (Rejilla)</h5>
+                            <p class="text-muted">Es la base de todo el diseño responsivo. Se compone de un sistema de 12 columnas flexibles basados en Flexbox utilizando las clases <code>.container</code>, <code>.row</code>, y <code>.col-*</code>.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="me-3 text-center">
+                            <span class="badge badge-fecha px-3 py-2 text-dark fs-6 fw-normal shadow-sm">Punto 2</span>
+                            <div class="vr h-100 mx-auto my-2 d-block bg-secondary opacity-25" style="width: 2px;"></div>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-dark">Componentes Comunes de IU</h5>
+                            <p class="text-muted">Elementos interactivos pre-estilizados listos para su uso directo, tales como:</p>
+                            <div class="list-group list-group-flush mb-3 shadow-sm rounded">
+                                <div class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i><strong>Botones y Alertas:</strong> Estados visuales inmediatos para el usuario.</div>
+                                <div class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i><strong>Modales y Tooltips:</strong> Ventanas emergentes e información contextual interactiva.</div>
+                                <div class="list-group-item"><i class="bi bi-check2-circle text-success me-2"></i><strong>Formularios dinámicos:</strong> Controles adaptables e inputs limpios.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="me-3 text-center">
+                            <span class="badge badge-fecha px-3 py-2 text-dark fs-6 fw-normal shadow-sm">Punto 3</span>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-dark">Clases de Utilidad de Bootstrap</h5>
+                            <p class="text-muted">Herramientas rápidas para modificar estilos sin escribir CSS personalizado adicional:</p>
+                            
+                            <div class="alert alert-info border-0 shadow-sm" role="alert">
+                                <i class="bi bi-info-circle-fill me-2"></i> ¡Tip de diseño! Bootstrap cuenta con utilidades de espaciado (Margen <code>m-*</code>, Padding <code>p-*</code>), alineación de textos, sombras, opacidad, y visibilidad de elementos según el tamaño de la pantalla.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="custom-footer text-center py-4 mt-5 border-top">
+        <div class="container">
+            <p class="mb-1 fw-semibold">Consulta Uno Bootstrap - Trabajo Académico</p>
+            <p class="text-muted small mb-0">&copy; 2026 Nicolás Zambrano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

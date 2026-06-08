@@ -1,0 +1,88 @@
+/* ==========================================
+   PALETA DE COLORES PERSONALIZADA
+   ========================================== */
+:root {
+    --fondo-principal: #ebefc9;    /* Color hueso suave */
+    --elementos-nav-foot: #aab3ab; /* Gris verdoso elegante */
+    --boton-activo-tags: #eee0b7;  /* Color arena claro */
+    --detalle-botones: #c4cbb7;     /* Verde oliva sutil */
+    --lineas-acento: #e8caaf;       /* Terracota claro */
+}
+
+/* Fondo principal del sitio web */
+body {
+    background-color: var(--fondo-principal);
+    color: #333333;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Estructuración de la Barra de Navegación */
+.custom-nav {
+    background-color: var(--elementos-nav-foot) !important;
+}
+
+.custom-nav .navbar-brand {
+    color: #2c3e2e !important;
+}
+
+.custom-nav .nav-link {
+    color: #4a5d4c !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.custom-nav .nav-link:hover {
+    color: #1a261c !important;
+}
+
+/* Botón o enlace activo resaltado con color arena claro */
+.active-custom {
+    background-color: var(--boton-activo-tags) !important;
+    color: #2b2515 !important;
+    font-weight: 600 !important;
+}
+
+/* Líneas de acento terracota claro bajo los títulos H2 */
+.linea-acento {
+    background-color: var(--lineas-acento);
+    height: 4px;
+    width: 60px;
+    border-radius: 2px;
+}
+
+/* Texto de nombre destacado en la bienvenida */
+.texto-nombre {
+    color: #b0704b; /* Variación armónica basada en tu tono terracota claro #e8caaf */
+}
+
+/* Botón "Conóceme más" verde oliva sutil */
+.btn-conoceme {
+    background-color: var(--detalle-botones) !important;
+    border: 1px solid var(--detalle-botones) !important;
+    color: #2d3624 !important;
+    font-weight: 500;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-conoceme:hover {
+    background-color: #b3baa6 !important; /* Ligeramente más oscuro al pasar el cursor */
+    transform: translateY(-2px);
+}
+
+/* Fondo de las fechas o puntos de la línea de tiempo (Color arena claro) */
+.badge-fecha {
+    background-color: var(--boton-activo-tags) !important;
+    color: #4f4631 !important;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Estructuración del Pie de Página */
+.custom-footer {
+    background-color: var(--elementos-nav-foot);
+    color: #2c3e2e;
+}
+
+/* Ajuste sutil del icono decorativo de Bootstrap */
+.text-purple {
+    color: #7952b3;
+}
