@@ -9,80 +9,105 @@
     --lineas-acento: #e8caaf;       /* Terracota claro */
 }
 
-/* Fondo principal del sitio web */
+/* Base general */
 body {
     background-color: var(--fondo-principal);
-    color: #333333;
+    color: #2b302a;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    scroll-behavior: smooth;
 }
 
-/* Estructuración de la Barra de Navegación */
+/* Barra de Navegación */
 .custom-nav {
     background-color: var(--elementos-nav-foot) !important;
 }
 
 .custom-nav .navbar-brand {
-    color: #2c3e2e !important;
+    color: #202b21 !important;
 }
 
 .custom-nav .nav-link {
-    color: #4a5d4c !important;
+    color: #3f4d40 !important;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease-in-out;
 }
 
 .custom-nav .nav-link:hover {
-    color: #1a261c !important;
+    color: #111a12 !important;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Botón o enlace activo resaltado con color arena claro */
+/* Botón o enlace activo en la navegación */
 .active-custom {
     background-color: var(--boton-activo-tags) !important;
     color: #2b2515 !important;
     font-weight: 600 !important;
 }
 
-/* Líneas de acento terracota claro bajo los títulos H2 */
+/* Líneas decorativas debajo de h2 */
 .linea-acento {
     background-color: var(--lineas-acento);
-    height: 4px;
-    width: 60px;
-    border-radius: 2px;
+    height: 5px;
+    width: 70px;
+    border-radius: 5px;
 }
 
-/* Texto de nombre destacado en la bienvenida */
+/* Color destacado del nombre */
 .texto-nombre {
-    color: #b0704b; /* Variación armónica basada en tu tono terracota claro #e8caaf */
+    color: #af6b43; 
 }
 
-/* Botón "Conóceme más" verde oliva sutil */
+/* Botón Principal verde oliva sutil */
 .btn-conoceme {
     background-color: var(--detalle-botones) !important;
     border: 1px solid var(--detalle-botones) !important;
-    color: #2d3624 !important;
-    font-weight: 500;
-    transition: transform 0.2s, background-color 0.2s;
+    color: #252d1c !important;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn-conoceme:hover {
-    background-color: #b3baa6 !important; /* Ligeramente más oscuro al pasar el cursor */
+    background-color: #b5bda8 !important;
     transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
 }
 
-/* Fondo de las fechas o puntos de la línea de tiempo (Color arena claro) */
+/* Tarjetas interactivas con sutil animación */
+.card-interactiva {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-interactiva:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Color de iconos en las tarjetas */
+.color-icono {
+    color: #7d8b7e;
+}
+
+/* Badges de la Línea de Tiempo (Color arena claro) */
 .badge-fecha {
     background-color: var(--boton-activo-tags) !important;
-    color: #4f4631 !important;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    color: #4b412b !important;
+    font-weight: 600;
 }
 
-/* Estructuración del Pie de Página */
-.custom-footer {
-    background-color: var(--elementos-nav-foot);
-    color: #2c3e2e;
+/* Alerta personalizada */
+.alert-custom {
+    background-color: #f7f4e9;
+    color: #63532f;
+    border-left: 4px solid var(--lineas-acento) !important;
 }
 
-/* Ajuste sutil del icono decorativo de Bootstrap */
+/* Ajuste del logo nativo de Bootstrap */
 .text-purple {
     color: #7952b3;
+}
+
+/* Pie de Página */
+.custom-footer {
+    background-color: var(--elementos-nav-foot);
+    color: #202b21;
 }
